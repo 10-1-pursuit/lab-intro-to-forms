@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    Required fields are marked by *
+    <br />
+    <br />
+
+    <fieldset>
+        <legend>Contact Information</legend>
+    <label>Mx. <br />
+    <input name="suffix" id="Mx." type="radio" value="Mx." checked/>
+    </label>
+    <br />
+    <label>Mr. <br />
+        <input name="suffix" id="Mr." type="radio" value="Mr."/>
+    </label>
+    <br />
+    <label>Ms. <br />
+        <input name="suffix" id="Ms." type="radio" value="Ms."/>
+    </label>
+    <br />
+    <label>Mrs. <br />
+        <input name="suffix" id="Mrs." type="radio" value="Mrs." />
+    </label>
+    <br />
+    <label for="name">Name</label>
+    <br />
+    <input id="name" name="name" type="text" required/>
+</label>
+<br />
+<label for="email">Email</label>
+<br />
+<input id="email" name="email" type="text" required />
+</fieldset>
+<fieldset>
+    <legend>Payment Information</legend>
+    <label></label>
+        <select id="Credit Card" name="Card Company">
+          <!-- <option> Credit Card </option> -->
+          <option value="visa">Visa</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+      </label>
+      <br />
+    <label for= "card info">Credit Card Number
+        <br />
+        <input id="card info" name="Credit Card Number" type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx xxxx xxxx xxxx" required/>
+    </label>
+    <br />
+    <label for="expiration-date">Expiration Date
+         <br />
+        <input name="expiration" id="expiration-date" type="text" required />
+    </label>
+</fieldset>
+<input type="submit" value="Submit Payment" />
+</body>
+</html>
