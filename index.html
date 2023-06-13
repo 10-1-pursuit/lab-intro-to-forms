@@ -9,5 +9,51 @@
 		<h1>Payment Form</h1>
 
 		<p>Required fields are marked by *</p>
+
+		<form>
+			<!-- Contact Information field -->
+			<fieldset>
+				<legend>Contact Information</legend>
+
+				<!-- Honorific inputs -->
+				<label for="mx">Mx. </label>
+				<br />
+				<input type="radio" name="honorific" id="mx" value="mx" />
+				<br />
+				<label for="mr">Mr. </label>
+				<br />
+				<input type="radio" name="honorific" id="mr" value="mr" />
+				<br />
+				<label for="ms">Ms. </label>
+				<br />
+				<input type="radio" name="honorific" id="ms" value="ms" />
+				<br />
+				<label for="mrs">Mrs. </label>
+				<br />
+				<input type="radio" name="honorific" id="mrs" value="mrs" />
+				<br />
+
+				<!-- Name -->
+				<label for="name">Name </label>
+				<br />
+				<input type="text" name="name" id="name" required />
+				<br />
+				<!-- Email -->
+				<label for="email">Email </label>
+				<br />
+				<input type="email" name="email" id="email" required />
+				<br />
+			</fieldset>
+			<br />
+
+			<!-- Payment Information Field -->
+			<fieldset>
+				<legend>Payment Information</legend>
+			</fieldset>
+			<br />
+
+			<!-- Submit button -->
+			<input type="submit" value="Submit Payment" />
+		</form>
 	</body>
 </html>
