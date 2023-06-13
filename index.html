@@ -1,0 +1,81 @@
+<html Lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <h2>Payment Form</h2>
+    Required fields are marked by *
+    <br/>
+    <form>
+        <div>
+            <h3>Contact Information</h3>
+            <label>
+                Mx.
+                <br/>
+                <input name="prefix" type="radio" checked>
+            </label>
+            <br/>
+            <label>
+                Mr.
+                <br/>
+                <input name="prefix" type="radio">
+            </label>
+            <br/>
+            <label>
+                Ms.
+                <br/>
+                <input name="prefix" type="radio">
+            </label>
+            <br/>
+            <label>
+                Mrs.
+                <br/>
+                <input name="prefix" type="radio">
+            </label>
+            <br/>
+            <label>
+                Name*
+                <br/>
+                <input id="name" type="text" required />
+            </label>
+            <br/>
+            <label>
+                Email*
+                <br/>
+                <input id="email" type="email" required />
+            </label>
+        </div>
+        <br/>
+
+        <div>
+            <h3>Payment Information</h3>
+            <select id="card-options">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <label>
+                Credit Card Number*
+                <br/>
+                <input id="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
+            </label>
+            <br/>
+            <label>
+                Expiration Date*
+                <br/>
+                <input type="text" id="expiration-date" required />
+            </label>
+        </div>
+
+        <br/>
+        <input type="submit" value="Submit Payment" />
+
+    </form>
+</body>
+
+</html>
