@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Payment Form</title>
-</head>
+<h2>
+    Payment Form
+</h2>
+<br>
+<h>Required fields are marked by *</h>
 
 <body>
     <form>
         <fieldset>
-            <legend>Payment Information</legend>
+            <legend>Contact Information</legend>
             <div>
                 <label>
                     <input type="radio" name="salutation" value="mx" checked onclick="deselectRadioButtons()"> Mx.
@@ -41,25 +43,30 @@
         <fieldset>
             <legend>Payment Information</legend>
             <div>
-                <label>
-                    <input type="radio" name="paymentMethod" value="visa" checked onclick="deselectRadioButtons()"> Visa
-                </label>
-                <label>
-                    <input type="radio" name="paymentMethod" value="mastercard" onclick="deselectRadioButtons()">
-                    Mastercard
-                </label>
-                <label>
-                    <input type="radio" name="paymentMethod" value="american-express" onclick="deselectRadioButtons()">
-                    American Express
-                </label>
-                <label>
-                    <input type="radio" name="paymentMethod" value="discover" onclick="deselectRadioButtons()"> Discover
-                </label>
+                <label for="credit-card">Credit Card Number:</label>
+                <select id="payment-method" autocomplete="cc-number">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </div>
+
+            <label for="credit-card">Credit Card:</label>
+            <div class="input-box">
+                <input type="tel" id="credit-card" placeholder="xxxx xxxx xxxx xxxx" required>
+            </div>
+
+            <label for="expiration-date">Expiration Date:</label>
+            <div class="input-box">
+                <input type="text" id="expiration-date" required>
+            </div>
+
             </div>
             <br>
-            <input type="submit" value="Submit Payment">
 
         </fieldset>
+        <input type="submit" value="Submit Payment">
     </form>
 </body>
 
