@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Intro to Forms Lab</title>
+	</head>
+	<body>
+		<h1>Payment Form</h1>
+
+		<p>Required fields are marked by *</p>
+
+		<form>
+			<!-- Contact Information field -->
+			<fieldset>
+				<legend>Contact Information</legend>
+
+				<!-- Honorific inputs -->
+				<label for="mx">Mx. </label>
+				<br />
+				<input type="radio" name="honorific" id="mx" value="mx" checked />
+				<br />
+				<label for="mr">Mr. </label>
+				<br />
+				<input type="radio" name="honorific" id="mr" value="mr" />
+				<br />
+				<label for="ms">Ms. </label>
+				<br />
+				<input type="radio" name="honorific" id="ms" value="ms" />
+				<br />
+				<label for="mrs">Mrs. </label>
+				<br />
+				<input type="radio" name="honorific" id="mrs" value="mrs" />
+				<br />
+
+				<!-- Name -->
+				<label for="name">Name *</label>
+				<br />
+				<input type="text" name="name" id="name" required />
+				<br />
+				<!-- Email -->
+				<label for="email">Email *</label>
+				<br />
+				<input type="email" name="email" id="email" required />
+				<br />
+			</fieldset>
+			<br />
+
+			<!-- Payment Information Field -->
+			<fieldset>
+				<legend>Payment Information</legend>
+
+				<!-- Credit Card Number Dropdown -->
+				<label for="credit-card">
+					<select id="credit-card-number" name="credit-card">
+						<option>-- Select a credit card --</option>
+						<option value="visa">Visa</option>
+						<option value="mastercard">MasterCard</option>
+						<option value="american-express">American Express</option>
+						<option value="discover">Discover</option>
+					</select>
+					Credit Card Number *
+					<br />
+					<!-- Credit Card Number Input -->
+					<input
+						type="tel"
+						name="credit-card"
+						id="credit-card"
+						placeholder="xxxx xxxx xxxx xxxx"
+						required
+					/>
+				</label>
+				<br />
+				<label for="expiration-date">Expiration Date *</label>
+				<br />
+				<input
+					type="text"
+					name="expiration-date"
+					id="expiration-date"
+					required
+				/>
+				<br />
+			</fieldset>
+			<br />
+
+			<!-- Submit button -->
+			<input type="submit" value="Submit Payment" />
+		</form>
+	</body>
+</html>
