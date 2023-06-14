@@ -7,10 +7,11 @@
   <body>
     <header>
         <h1>Payment Form</h1>
-        <h5>Required fields are marked by a *</h5>
+        <h5>Required fields are marked by *</h5>
     </header>
     <form>
     <label>
+      <hr>
         <h5>Contact Information</h5>
         Mx.
         <br />
@@ -46,6 +47,7 @@
             <br />
             <input id="email" name="email" type="email" placeholder="name@email.com" required/>
           </label>
+          <hr>
           <h5>Payment Information</h5>
             <select id="contact-credit-card-type" name="credit card number">
               <option value="visa">Visa</option>
@@ -65,7 +67,7 @@
             <input id="expiration-date" name="expiration date" type="text" placeholder="00/00" required/>
           </label>
           <br />
-          <br />
+          <hr>
         <input type="submit" value="Submit Payment"/>
       </form>
   </body>
