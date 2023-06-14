@@ -48,6 +48,7 @@ In Chrome Developer tools, there is a tab called `LightHouse`. Run a lighthouse 
 
 To use this feature, run `npm install` to install `live-server` in the terminal. Then instead of using `open index.html`, you will type `npm start` to open your `index.html` page. `live-server` will also give you the benefit of automatically refreshing your page whenever you make changes to your project.
 
+\
 Use the audit to update your form so that you get a score of 100% For accessibility and best practices.
 
 ![lighthouse bonus](./images/chromeLighthouseBonus.png)
