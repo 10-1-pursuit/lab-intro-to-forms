@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1> PAYMENT FORM </h1>
+        <br>
+        <p> Required fields are marked by * </p>
+        <br>
+        <hr>
+
+        <h2>Contact Information </h2>
+        <br>
+        <form>
+            <div>
+                <label>
+                    Mx.
+                    <input id="1" name="visibility" type="radio" value="public" checked="checked" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Mr.
+                    <input id="2" name="visibility" type="radio" value="private" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ms.
+                    <input id="3" name="visibility" type="radio" value="public" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Mrs.
+                    <input id="4" name="visibility" type="radio" value="private" />
+                </label>
+            </div>
+            <br>
+            <br>
+            <label>
+                <div> <label for="5"> Name </label></div>
+                <input id="5" name="Name" type="text" placeholder="Enter full name here." required />
+
+            </label>
+            <label>
+                <div><label for="6"> Email </label> </div>
+                <input id="6" name="Email" type="text" placeholder="Enter email" required />
+            </label>
+
+        </form>
+        <hr>
+
+        <h2> Payment Information </h2>
+        <form>
+
+            <div>
+                <!-- <label>Credit Card Number</label> -->
+                <select id="Select Credit Card" name="Select Credit Card">
+                    <option>-- Select a Credit Card--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                    <option value="Discover">Discover</option>
+                </select>
+
+            </div>
+            <br>
+            <div><label> Enter Credit Card Number</label></div>
+            <input id="7" name="Credit Card Number" type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+            <br>
+            <div>
+                <br>
+                <div><label> Expiration Date</label></div>
+                <input id="8" name="Expiration-Date" type="tel" placeholder="Enter some text." required />
+            </div>
+            <br>
+            <br>
+            <input class="favorite styled" type="button" value="Submit Payment">
+            <br>
+            <br>
+            <hr>
+        </form>
+    </header>
+</body>
+
+</html>
