@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+        <h1>Payment Form</h1>
+        <h5>Required fields are marked by *</h5>
+    </header>
+    <form>
+    <label>
+      <hr>
+        <h5>Contact Information</h5>
+        Mx.
+        <br />
+        <input id="Mx." name="Preferred Title" type="radio" value="Mx." checked/>
+    </label>
+    <br />
+    <label>
+        Mr.
+        <br />
+        <input id="Mr." name="Preferred Title" type="radio" value="Mr."/>
+    </label>
+    <br />
+    <label>
+        Ms.
+        <br />
+        <input id="Ms." name="Preferred Title" type="radio" value="Ms."/>
+    </label>
+    <br />
+    <label>
+        Mrs.
+        <br />
+        <input id="Mrs." name="Preferred Title" type="radio" value="Mrs."/>
+    </label>
+        <br />
+        <label for="Name">
+            Name
+            <br />
+            <input id="name" name="name" type="text" placeholder="Enter name.." required/>
+          </label>
+          <br />
+        <label for="Email">
+            Email
+            <br />
+            <input id="email" name="email" type="email" placeholder="name@email.com" required/>
+          </label>
+          <hr>
+          <h5>Payment Information</h5>
+            <select id="contact-credit-card-type" name="credit card number">
+              <option value="visa">Visa</option>
+              <option value="mastercard">MasterCard</option>
+              <option value="american express">American Express</option>
+              <option value="discover">Discover</option>
+            </select>
+          <label for="Credit card number">
+            Credit Card Number
+            <br />
+            <input id="contact-credit-card-number" name="credit card number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+          </label>
+        <br />
+        <label for="Expiration Date">
+            Expiration Date
+            <br />
+            <input id="expiration-date" name="expiration date" type="text" placeholder="00/00" required/>
+          </label>
+          <br />
+          <hr>
+        <input type="submit" value="Submit Payment"/>
+      </form>
+  </body>
+</html>
