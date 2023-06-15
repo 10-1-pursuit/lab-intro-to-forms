@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function () {
+            var defaultRadioButton = document.getElementById("Mx");
+            defaultRadioButton.checked = true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="Mx"><strong>Mx.</strong></label><br>
+        <input type="radio" id="Mx" name="title" value="Mx"><br>
+        <label for="Ms"><strong>Ms.</strong></label><br>
+        <input type="radio" id="Ms" name="title" value="Ms"><br>
+        <label for="Mr"><strong>Mr.</strong></label><br>
+        <input type="radio" id="Mr" name="title" value="Mr"><br>
+        <label for="Mrs"><strong>Mrs.</strong></label><br>
+        <input type="radio" id="Mrs" name="title" value="Mrs"><br>
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="name" required>*<br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>*<br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+
+        <form name="form1" id="form1" action="/action_page.php">
+            <select name="cardType" id="subject">
+                <option value="Visa">Visa</option>
+                <option value="Master Card">Master Card</option>
+                <option value="American Express">American Express</option>
+                <option value="Discover">Discover</option>
+            </select>
+            Credit Card Number
+            <label for="9digitNumber"></label><br>
+            <input type="tel" id="9digitNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required>*<br>
+            <label for="expirationDate">Expiration Date:</label><br>
+            <input type="text" id="expirationDate" name="expirationDate" required>*<br>
+            <div>
+                <input type="submit" value="Submit Payment">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
