@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const subjectObject = {
+            "Visa": "visa",
+            "Master Card": "master card"
+        }
+        window.onload = function () {
+            var subjectSel = document.getElementById("subject");
+            for (var x in subjectObject) {
+                subjectSel.options[subjectSel.options.length] = new Option(x, x);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+
+    <p>Required fields are marked by *</p>
+
+
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="Mx"><strong>Mx.</strong></label>
+        <br>
+        <input type="radio" id="Mx" name="fav_language" value="Mx">
+        <br>
+        <label for="Ms"><strong>Ms.</strong></label>
+        <br>
+        <input type="radio" id="Ms" name="fav_language" value="Ms">
+        <br>
+        <label for="Mr"><strong>Mr.</strong></label>
+        <br>
+        <input type="radio" id="Mr" name="fav_language" value="Mr">
+        <br>
+        <label for="Mrs"><strong>Mrs.</strong></label>
+        <br>
+        <input type="radio" id="Mrs" name="fav_language" value="Mrs">
+        <br>
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname" required>*<br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>*<br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+
+        <form name="form1" id="form1" action="/action_page.php">
+            <select name="subject" id="subject">
+                <!-- <option value="" selected="selected">Select</option> -->
+            </select> Credit Card Number
+            <label for="9digitNumber"></label><br>
+            <input type="9digitNumber" id="9digitNumber" name="9digitNumber" placeholder="xxxx xxxx xxxx xxxx"
+                required>*<br>
+            <label for="expirationDate">Expiration Date:</label><br>
+            <input type="expirationDate" id="expirationDate" name="expirationDate" required>*<br>
+        </form>
+    </fieldset>
+    <div>
+        <input type="submit" value="Submit Payment">
+    </div>
+    </form>
+</body>
+
+</html>
