@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+
+    <p>Required fields are marked by *</p>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label>Mx.</label><br>
+        <input type="radio" name="abbr" id="abbr" checked><br>
+        <label>Mr.</label><br>
+        <input type="radio" name="abbr" id="abbr"><br>
+        <label>Ms.</label><br>
+        <input type="radio" name="abbr" id="abbr"><br>
+        <label>Mrs.</label><br>
+        <input type="radio" name="abbr" id="abbr"><br>
+        <label>Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label>Email</label><br>
+        <input id="email" name="email" type="email">
+    </fieldset>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <label>
+            <select id="post-category" name="category">
+              <option>--xxxx xxxx xxxx xxxx--</option>
+              <option value="Visa">Visa</option>
+              <option value="Mastercard">Mastercard</option>
+              <option value="Discover">Discover</option>
+              <option value="American-express">American-express</option>
+            </select>
+          </label>
+        <label for="xxxx xxxx xxxx xxxx">Credit Card Number</label><br>
+        <label for="Experation Date">Experation Date</label><br>
+        <input type="text" name="Experation Date" id="Experation Date">
+    </fieldset>
+    <input type="submit" value="Submit Payment">
+</body>
+</html>
