@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <header>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by *</p>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="Mx.">Mx.
+            <br />
+            <input id="Mx." name="suffix" type="radio" value="Mx." checked/>
+            </label>
+            <br />
+            <label for="Mr.">Mr.
+            <br />
+            <input id="Mr." name="suffix" type="radio" value="Mr."/>
+            </label>
+            <br />
+            <label for="Ms.">Ms.
+            <br />
+            <input id="Ms." name="suffix" type="radio" value="Ms."/>
+            </label>
+            <br />
+            <label for="Mrs.">Mrs.
+            <br />
+            <input id="Mrs." name="suffix" type="radio" value="Mrs."/>
+            </label>
+            <br />
+            <label for="name">Name
+            <br />
+            <input id="name" name="name" type="text" required/>
+            </label>
+            <br />
+            <label for="email">Email
+            <br />
+            <input id="email" name="email" type="email" required/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label>
+                <select id="credit-card" name="card-type">
+                  <option>-- Select a credit card --</option>
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="american-express">American Express</option>
+                  <option value="discover">Discover</option>
+                </select>
+                Credit Card Number
+                <br />
+                <input id="card-info" name="credit-card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+                <br />
+                <label for="expiration-date">Expiration Date
+                <br />
+                <input id="expiration-date" name="expiration-date" type="text" placeholder="xx/xx" required/>
+                </label>
+              </label>
+        </fieldset>
+        <input type="submit" value="Submit Payment" />
+    </form>
+
+</body>
+</html>
